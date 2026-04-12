@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ananda Yoga Studio - Discover inner peace and physical wellness through traditional and modern yoga practices in Delhi.">
+  <meta name="keywords" content="yoga studio, yoga classes, meditation, pranayama, Delhi, wellness">
+  <title>Ananda Yoga Studio - Your Path to Wellness</title>
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+
+  <!-- Google Fonts -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-lg border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center gap-3">
+        <a href="#" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="logo.jpg" class="w-12 h-12 rounded-full object-cover" alt="Ananda Yoga Logo">
+            <span class="text-indigo-600">आnanda Yoga</span>
+        </a>
+      </h1>
+      <div class="hidden md:flex gap-8">
+        <a href="#about" class="text-gray-700 hover:text-indigo-600 transition-colors font-medium">About</a>
+        <a href="#services" class="text-gray-700 hover:text-indigo-600 transition-colors font-medium">Services</a>
+        <a href="#classes" class="text-gray-700 hover:text-indigo-600 transition-colors font-medium">Classes</a>
+        <a href="#testimonials" class="text-gray-700 hover:text-indigo-600 transition-colors font-medium">Testimonials</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition-colors font-medium">Contact</a>
+      </div>
+      <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transition-shadow">
+        Book Trial
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center fade-in">
+      <div>
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          Discover Inner Peace at <span class="text-yellow-300">आnanda Yoga</span>
+        </h2>
+        <p class="text-xl mb-8 text-gray-100 leading-relaxed">
+          Embark on a transformative journey where ancient wisdom meets modern wellness. Cultivate balance, strength, and serenity in a nurturing environment.
+        </p>
+        <div class="mb-8">
+          <p class="text-lg italic text-yellow-200"><i class="fa-solid fa-wand-magic-sparkles"></i> Breathe deeply. Move gracefully. Live fully.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="bg-white text-indigo-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 text-center">
+            Start Your Journey
+          </a>
+          <a href="#about" class="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition-all text-center">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1593810450967-f9c42742e326?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          class="rounded-2xl shadow-2xl w-full" alt="Serene yoga practice"/>
+        <div class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+          <p class="text-indigo-600 font-semibold">5+ Years of Excellence</p>
+          <p class="text-gray-600 text-sm">700+ Students Transformed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <h3 class="text-4xl font-bold mb-6 text-gray-800">About Ananda Yoga Studio</h3>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Nestled in the heart of Mayur Vihar, our studio is a sanctuary dedicated to holistic wellness, blending traditional yogic wisdom with contemporary practices to nurture your physical, mental, and spiritual growth.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 mb-16">
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+          <span class="text-2xl">🌿</span>
+        </div>
+        <h4 class="text-2xl font-semibold mb-4 text-gray-800">Our Mission</h4>
+        <p class="text-gray-600 leading-relaxed">
+          To empower individuals with the tools for self-transformation, fostering communities where physical vitality, mental clarity, and spiritual awakening flourish in harmony.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+          <span class="text-2xl">🌼</span>
+        </div>
+        <h4 class="text-2xl font-semibold mb-4 text-gray-800">Our Vision</h4>
+        <p class="text-gray-600 leading-relaxed">
+          To become Delhi's premier destination for authentic yoga education, creating a ripple effect of wellness that extends beyond our studio walls into everyday lives.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-8 rounded-2xl">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+             class="w-32 h-32 rounded-full object-cover shadow-lg" alt="Daya - Yoga Instructor"/>
+        <div>
+          <h4 class="text-2xl font-semibold mb-2 text-gray-800">Meet Daya, Your Guide</h4>
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            Certified by MDNIY (Ministry of Ayush) with over 5 years of dedicated practice and teaching experience. Daya has personally guided 700+ students through their wellness journeys, conducting specialized workshops and therapeutic sessions that address individual needs and aspirations.
+          </p>
+          <div class="flex gap-4 text-sm text-gray-500">
+            <span>✓ MDNIY Certified</span>
+            <span>✓ 5+ Years Experience</span>
+            <span>✓ 700+ Students</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold mb-6 text-gray-800">Our Comprehensive Services</h3>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Tailored wellness programs designed to meet you wherever you are on your journey to holistic health.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+          <div class="w-12 h-12 md:w-16 md:h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-indigo-200 transition-colors">
+            <span class="text-xl md:text-2xl">🧘</span>
+          </div>
+          <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Yoga Classes</h4>
+          <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">From beginner foundations to advanced practices, our classes cater to all levels with personalized guidance.</p>
+          <span class="text-indigo-600 font-medium text-sm">Beginner to Advanced</span>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+          <div class="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-purple-200 transition-colors">
+            <span class="text-xl md:text-2xl">🫁</span>
+          </div>
+          <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Pranayama & Meditation</h4>
+          <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Master the art of breathwork and mindfulness to cultivate inner peace and mental clarity.</p>
+          <span class="text-purple-600 font-medium text-sm">Breath & Mind</span>
+        </div>
+
+        <div class="bg-white hidden md:block p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+          <div class="w-12 h-12 md:w-16 md:h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-pink-200 transition-colors">
+            <span class="text-xl md:text-2xl">👶</span>
+          </div>
+          <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Kids Yoga</h4>
+          <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Fun, engaging sessions that introduce children to yoga's benefits through play and movement.</p>
+          <span class="text-pink-600 font-medium text-sm">Ages 5-12</span>
+        </div>
+
+        <div class="bg-white hidden md:block p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+          <div class="w-12 h-12 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-green-200 transition-colors">
+            <span class="text-xl md:text-2xl">🌿</span>
+          </div>
+          <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Healing Sessions</h4>
+          <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Targeted therapeutic practices for specific health concerns and emotional well-being.</p>
+          <span class="text-green-600 font-medium text-sm">Personalized Care</span>
+        </div>
+
+        <div class="bg-white p-6 hidden md:block md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+          <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-blue-200 transition-colors">
+            <span class="text-xl md:text-2xl">🤰</span>
+          </div>
+          <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Prenatal & Postnatal</h4>
+          <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Safe, supportive practices for expectant and new mothers to maintain strength and serenity.</p>
+          <span class="text-blue-600 font-medium text-sm">Maternal Wellness</span>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+          <div class="w-12 h-12 md:w-16 md:h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-yellow-200 transition-colors">
+            <span class="text-xl md:text-2xl">⚕️</span>
+          </div>
+          <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Therapeutic Yoga</h4>
+          <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">Specialized sessions addressing chronic conditions, injuries, and rehabilitation needs.</p>
+          <span class="text-yellow-600 font-medium text-sm">Medical Integration</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">Why Choose Ananda Yoga</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="text-center bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+          <span class="text-2xl md:text-3xl">👤</span>
+        </div>
+        <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Personalized Attention</h4>
+        <p class="text-gray-600 text-sm md:text-base">Every student receives individual guidance tailored to their unique needs, goals, and pace of progress.</p>
+      </div>
+
+      <div class="text-center bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+          <span class="text-2xl md:text-3xl">✅</span>
+        </div>
+        <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Certified Expertise</h4>
+        <p class="text-gray-600 text-sm md:text-base">Our instructor holds official MDNIY certification and brings 5+ years of professional teaching experience.</p>
+      </div>
+
+      <div class="text-center hidden md:block bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+          <span class="text-2xl md:text-3xl">👥</span>
+        </div>
+        <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Intimate Groups</h4>
+        <p class="text-gray-600 text-sm md:text-base">Small class sizes ensure focused instruction and a supportive community atmosphere for optimal learning.</p>
+      </div>
+
+      <div class="text-center bg-white hidden md:block p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+          <span class="text-2xl md:text-3xl">🏞️</span>
+        </div>
+        <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Serenity Space</h4>
+        <p class="text-gray-600 text-sm md:text-base">Our studio provides a tranquil, dedicated environment free from distractions and external noise.</p>
+      </div>
+
+      <div class="text-center bg-white p-6 hidden md:block md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+          <span class="text-2xl md:text-3xl">🌿</span>
+        </div>
+        <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Holistic Approach</h4>
+        <p class="text-gray-600 text-sm md:text-base">We integrate physical postures, breathwork, meditation, and lifestyle guidance for complete wellness.</p>
+      </div>
+
+      <div class="text-center bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+          <span class="text-2xl md:text-3xl">📈</span>
+        </div>
+        <h4 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-800">Proven Results</h4>
+        <p class="text-gray-600 text-sm md:text-base">Join 700+ students who have transformed their health, mindset, and quality of life through our programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section id="classes" class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold mb-6 text-gray-800">Our Class Offerings</h3>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Discover the perfect practice for your lifestyle with our diverse range of classes designed for all ages and abilities.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="flex items-center gap-4 mb-4 md:mb-6">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-xl md:text-2xl">🧘</span>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl font-semibold text-gray-800">Universal Yoga</h4>
+              <p class="text-gray-600 text-sm md:text-base">All Ages & Levels</p>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm md:text-base mb-4">Comprehensive asana practice combining traditional hatha yoga with modern therapeutic approaches, suitable for practitioners of all ages and experience levels.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">Beginner Friendly</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">All Ages</span>
+          </div>
+        </div>
+
+        <div class="bg-white hidden md:block p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="flex items-center gap-4 mb-4 md:mb-6">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-xl md:text-2xl">👶</span>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl font-semibold text-gray-800">Children's Yoga</h4>
+              <p class="text-gray-600 text-sm md:text-base">Ages 5-12</p>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm md:text-base mb-4">Engaging, playful sessions that introduce young minds to yoga through stories, games, and age-appropriate postures, fostering physical and emotional development.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full">Fun & Playful</span>
+            <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">Developmental</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="flex items-center gap-4 mb-4 md:mb-6">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-xl md:text-2xl">🧠</span>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl font-semibold text-gray-800">Mindfulness & Meditation</h4>
+              <p class="text-gray-600 text-sm md:text-base">Mental Wellness Focus</p>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm md:text-base mb-4">Deepen your meditation practice with guided sessions exploring various techniques including mindfulness, transcendental meditation, and breath awareness.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Mental Clarity</span>
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Stress Relief</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="flex items-center gap-4 mb-4 md:mb-6">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-xl md:text-2xl">🌿</span>
+            </div>
+            <div>
+              <h4 class="text-xl md:text-2xl font-semibold text-gray-800">Therapeutic Healing</h4>
+              <p class="text-gray-600 text-sm md:text-base">Specialized Care</p>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm md:text-base mb-4">Personalized sessions addressing specific health concerns, chronic conditions, or rehabilitation needs with gentle, restorative yoga practices.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full">Restorative</span>
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full">Therapeutic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <p class="text-lg text-gray-600 mb-6">
+          🎯 Flexible scheduling available to accommodate your lifestyle
+        </p>
+        <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+          View Schedule & Book
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">What Our Students Say</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="flex items-center gap-4 mb-4 md:mb-6">
+          <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+               class="w-12 h-12 rounded-full object-cover" alt="Priya S."/>
+          <div>
+            <h5 class="font-semibold text-gray-800">Priya Sharma</h5>
+            <p class="text-gray-500 text-sm">Regular Practitioner</p>
+          </div>
+        </div>
+        <p class="text-gray-600 italic leading-relaxed text-sm md:text-base">
+          "Ananda Yoga completely transformed my approach to wellness. The personalized attention and Daya's expertise helped me overcome chronic back pain and find true inner peace."
+        </p>
+        <div class="flex text-yellow-400 mt-4">
+          ★★★★★
+        </div>
+      </div>
+
+      <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="flex items-center gap-4 mb-4 md:mb-6">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+               class="w-12 h-12 rounded-full object-cover" alt="Rajesh K."/>
+          <div>
+            <h5 class="font-semibold text-gray-800">Rajesh Kumar</h5>
+            <p class="text-gray-500 text-sm">Corporate Professional</p>
+          </div>
+        </div>
+        <p class="text-gray-600 italic leading-relaxed text-sm md:text-base">
+          "As someone with a demanding job, these sessions have become my sanctuary. The stress relief techniques and meditation practices have improved my focus and overall well-being immensely."
+        </p>
+        <div class="flex text-yellow-400 mt-4">
+          ★★★★★
+        </div>
+      </div>
+
+      <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+        <div class="flex items-center gap-4 mb-4 md:mb-6">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+               class="w-12 h-12 rounded-full object-cover" alt="Anjali M."/>
+          <div>
+            <h5 class="font-semibold text-gray-800">Anjali Mehta</h5>
+            <p class="text-gray-500 text-sm">New Mother</p>
+          </div>
+        </div>
+        <p class="text-gray-600 italic leading-relaxed text-sm md:text-base">
+          "The postnatal yoga classes were perfect for my recovery journey. Daya's gentle guidance and the supportive environment helped me regain strength and confidence as a new mom."
+        </p>
+        <div class="flex text-yellow-400 mt-4">
+          ★★★★★
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <p class="text-lg text-gray-600 mb-6">Join our community of 700+ transformed lives</p>
+      <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+        Share Your Story
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-6">Begin Your Transformation Today</h3>
+      <p class="text-xl mb-8 text-gray-100 leading-relaxed">
+        Take the first step towards a healthier, more balanced life. Our free trial class is your gateway to discovering the profound benefits of yoga.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+          Book Free Trial Class
+        </a>
+        <a href="tel:+919717536539" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition-all">
+          Call Now: +91 9717536539
+        </a>
+      </div>
+      <p class="text-sm mt-6 text-gray-200">No commitment required • 60-minute introductory session • All levels welcome</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">Get In Touch</h3>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h4 class="text-2xl font-semibold mb-6 text-gray-800">Visit Our Studio</h4>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">📞</span>
+            </div>
+            <div>
+              <h5 class="font-semibold text-gray-800">Phone</h5>
+              <p class="text-gray-600">+91 9717536539</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">📧</span>
+            </div>
+            <div>
+              <h5 class="font-semibold text-gray-800">Email</h5>
+              <p class="text-gray-600">aananda.daya30@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">📍</span>
+            </div>
+            <div>
+              <h5 class="font-semibold text-gray-800">Location</h5>
+              <p class="text-gray-600">B-16, Above Chawla Sports Shop<br>Acharya Niketan, Mayur Vihar Phase 1<br>Delhi, India 110091</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h5 class="font-semibold text-gray-800 mb-4">Business Hours</h5>
+          <div class="space-y-2 text-gray-600">
+            <p>Monday - Saturday: 6:00 AM - 8:00 PM</p>
+            <p>Sunday: 8:00 AM - 12:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="bg-white p-8 rounded-2xl shadow-lg space-y-6">
+        <h4 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h4>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Your Name</label>
+          <input type="text" placeholder="Enter your full name" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" required/>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+          <input type="email" placeholder="your.email@example.com" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" required/>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"/>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-medium mb-2">Message</label>
+          <textarea placeholder="Tell us about your goals, experience level, or any questions..." rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none" required></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+          Send Message
+        </button>
+
+        <p class="text-sm text-gray-500 text-center">
+          We typically respond within 24 hours. For immediate inquiries, please call us directly.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h5 class="text-xl font-semibold mb-4 flex items-center gap-2">
+            <img src="logo.jpg" class="w-8 h-8 rounded-full" alt="Ananda Yoga Logo"/>
+            आnanda Yoga
+          </h5>
+          <p class="text-gray-300 leading-relaxed">
+            Your sanctuary for holistic wellness in the heart of Delhi. Discover the transformative power of authentic yoga practice.
+          </p>
+        </div>
+
+        <div>
+          <h6 class="font-semibold mb-4">Quick Links</h6>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#classes" class="hover:text-white transition-colors">Classes</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="font-semibold mb-4">Contact Info</h6>
+          <ul class="space-y-2 text-gray-300">
+            <li>+91 9717536539</li>
+            <li>aananda.daya30@gmail.com</li>
+            <li>Mayur Vihar Phase 1, Delhi</li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="font-semibold mb-4">Follow Us</h6>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/aanandayogastudio" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors" target="_blank">
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2026 आnanda Yoga Studio. All rights reserved. | Designed with ❤️ for wellness seekers.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
